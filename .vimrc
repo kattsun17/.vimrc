@@ -5,18 +5,6 @@ set encoding=utf-8
 set fenc=utf-8
 
 "---------------------------------------------------------------------------
-" 検索の挙動に関する設定:
-"
-" 検索時に大文字小文字を無視 (noignorecase:無視しない)
-set ignorecase
-" 大文字小文字の両方が含まれている場合は大文字小文字を区別
-set smartcase
-" インクリメンタルサーチ
-set incsearch
-" 検索ハイライト
-set hlsearch
-
-"---------------------------------------------------------------------------
 "help japanese
 "
 helptags ~/.vim/help/vimdoc-ja/doc
@@ -27,21 +15,19 @@ set helplang=ja
 " 編集に関する設定:
 "
 " タブの画面上での幅
-set tabstop=2
+set tabstop=4
 " 連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
-set softtabstop=2
+set softtabstop=4
 " 自動インデントでずれる幅
-set shiftwidth=2
+set shiftwidth=4
 " タブをスペースに展開する/ しない (expandtab:展開する)
-set expandtab
+set expandtabv
 " 自動的にインデントする (noautoindent:インデントしない)
 set autoindent
 " バックスペースでインデントや改行を削除できるようにする
 set backspace=indent,eol,start
 " 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない)
 set wrapscan
-" 括弧入力時に対応する括弧を表示 (noshowmatch:表示しない)
-set showmatch
 " コマンドライン補完するときに強化されたものを使う(参照 :help wildmenu)
 set wildmenu
 " テキスト挿入中の自動折り返しを日本語に対応させる
@@ -76,7 +62,7 @@ set showmode
 " タイトルを表示
 set title
 " 画面のカラースキーマCygwinでみやすい色使い
-colorscheme ron
+colorscheme elflord
 " 背景
 "set background black
  
@@ -84,7 +70,7 @@ colorscheme ron
 " ファイル操作に関する設定:
 "
 " バックアップファイルを作成しない (次行の先頭の " を削除すれば有効になる)
-set nobackup
+"set nobackup
 " スワップファイルを作成しない (次行の先頭の " を削除すれば有効になる)
 set noswapfile
 " シンタックスハイライト
