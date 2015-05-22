@@ -96,7 +96,8 @@ inoremap { {}<LEFT>
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap < <><LEFT>
-
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
 
 "---------------------------------------------------------------------------
 " key-mapping
