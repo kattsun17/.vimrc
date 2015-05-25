@@ -21,7 +21,7 @@ set softtabstop=4
 " 自動インデントでずれる幅
 set shiftwidth=4
 " タブをスペースに展開する/ しない (expandtab:展開する)
-set expandtabv
+set expandtab
 " 自動的にインデントする (noautoindent:インデントしない)
 set autoindent
 " バックスペースでインデントや改行を削除できるようにする
