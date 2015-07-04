@@ -61,8 +61,6 @@ set showcmd
 set showmode
 " タイトルを表示
 set title
-" 画面のカラースキーマCygwinでみやすい色使い
-colorscheme elflord
 " 背景
 "set background black
  
@@ -161,10 +159,21 @@ filetype off
 set rtp+=~/.vim/vundle.git
 call vundle#rc()
 
-
 Bundle 'neocomplcache'
 Bundle 'nerdtree'
+Bundle 'maxmellon/molokai'
 filetype plugin indent on
+
+set number
+set relativenumber
+try
+    colorscheme molokai
+    let g:molokai_original = 1
+catch
+    colorscheme elflord
+endtry
+set ttyfast
+set ttyscroll=300
 
 " "---------------------------------------------------------------------------
 " " neocomplcache
