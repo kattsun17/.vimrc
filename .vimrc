@@ -9,7 +9,14 @@ source ~/.vim/rc/encoding.rc.vim
 helptags ~/.vim/help/vimdoc-ja/doc
 set runtimepath+=~/.vim/help/vimdoc-ja
 set helplang=ja
- 
+
+"---------------------------------------------------------------------------
+" 改行したときの挙動についての設定:
+"
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
 "---------------------------------------------------------------------------
 " 編集に関する設定:
 "
