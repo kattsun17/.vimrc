@@ -31,7 +31,7 @@ set shiftwidth=4
 " タブをスペースに展開する/ しない (expandtab:展開する)
 set expandtab
 " 自動的にインデントする (noautoindent:インデントしない)
-set noautoindentautoindent
+set noautoindent
 " バックスペースでインデントや改行を削除できるようにする
 set backspace=indent,eol,start
 " 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない)
