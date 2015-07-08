@@ -17,7 +17,7 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
-""set smartindent
+set smartindent
 
 "---------------------------------------------------------------------------
 " 編集に関する設定:
@@ -31,7 +31,7 @@ set shiftwidth=4
 " タブをスペースに展開する/ しない (expandtab:展開する)
 set expandtab
 " 自動的にインデントする (noautoindent:インデントしない)
-set autoindent
+set noautoindentautoindent
 " バックスペースでインデントや改行を削除できるようにする
 set backspace=indent,eol,start
 " 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない)
