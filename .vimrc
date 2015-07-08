@@ -17,7 +17,7 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
-set smartindent
+""set smartindent
 
 "---------------------------------------------------------------------------
 " 編集に関する設定:
