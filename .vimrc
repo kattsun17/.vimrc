@@ -15,7 +15,9 @@ set helplang=ja
 "
 " 入力モードで開始する
 let g:unite_enable_start_insert=1"
-" タブの画面上での幅
+" 対応する括弧を強調表示
+set showmatch
+" タブサイス4
 set tabstop=4
 " 連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
 set softtabstop=4
