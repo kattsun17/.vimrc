@@ -11,15 +11,6 @@ set runtimepath+=~/.vim/help/vimdoc-ja
 set helplang=ja
 
 "---------------------------------------------------------------------------
-" 改行したときの挙動についての設定:
-"
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
-
-set smartindent
-
-"---------------------------------------------------------------------------
 " 編集に関する設定:
 "
 " タブの画面上での幅
@@ -94,10 +85,20 @@ endfor
 "---------------------------------------------------------------------------
 " 閉じ括弧を入力:
 "
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap ( ()<Left>
 ""inoremap < <><LEFT>
+
+"---------------------------------------------------------------------------
+" 改行したときの挙動についての設定:
+"
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> [}<Left><CR><ESC><S-o>
+inoremap (<Enter> (}<Left><CR><ESC><S-o>
+
+set smartindent
+
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 
@@ -105,6 +106,9 @@ inoremap ' ''<LEFT>
 " key-mapping
 "
 inoremap jj <Esc>
+
+nnoremap <Space>h  ^
+nnoremap <Space>l  $
 
 "---------------------------------------------------------------------------
 " 挿入モード時、ステータスラインの色を変える:
