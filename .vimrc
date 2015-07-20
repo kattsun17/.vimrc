@@ -36,7 +36,7 @@ set wildmenu
 " テキスト挿入中の自動折り返しを日本語に対応させる
 set formatoptions+=mM
 " viとの互換性を停止
-set nocompatible
+""set nocompatible
  
 "---------------------------------------------------------------------------
 " GUI固有ではない画面表示の設定:
