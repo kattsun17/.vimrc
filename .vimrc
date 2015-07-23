@@ -1,4 +1,5 @@
 "---------------------------------------------------------------------------
+
 " 日本語対応:
 "
 source ~/.vim/rc/encoding.rc.vim
@@ -14,7 +15,7 @@ set helplang=ja
 " 編集に関する設定:
 "
 " 入力モードで開始する
-let g:unite_enable_start_insert=1"
+""let g:unite_enable_start_insert=1"
 " 対応する括弧を強調表示
 set showmatch
 " タブサイス
